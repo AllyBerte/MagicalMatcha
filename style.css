@@ -1,0 +1,198 @@
+/*
+Theme Name: Storefront Child
+Theme URI: https://woocommerce.com/storefront/
+Template: storefront
+Author: Automattic
+Author URI: https://woocommerce.com/
+Description: Storefront is the perfect theme for your next WooCommerce project. Designed and developed by WooCommerce Core developers, it features a bespoke integration with WooCommerce itself plus many of the most popular customer facing WooCommerce extensions. There are several layout &amp; color options to personalise your shop, multiple widget regions, a responsive design and much more. Developers will love its lean and extensible codebase making it a joy to customize and extend. Looking for a WooCommerce theme? Look no further!
+Tags: e-commerce,two-columns,left-sidebar,right-sidebar,custom-background,custom-colors,custom-header,custom-menu,featured-images,full-width-template,threaded-comments,accessibility-ready,rtl-language-support,footer-widgets,sticky-post,theme-options,editor-style
+Version: 4.1.3.1665142048
+Updated: 2022-10-07 11:27:28
+
+*/
+
+
+
+
+    /*Help notes:
+
+    lining up boxes
+
+    making nounproject icon smaller
+
+    add picture (index?)
+
+    add more pages
+
+    make urls and icons connect lead to said pages
+
+        <img width="50" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNzUycHQiIGhlaWdodD0iNzUycHQiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDc1MiA3NTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiA8ZyBmaWxsPSIjYWM5NGMyIj4KICA8cGF0aCBkPSJtNDI4LjYgMzU3LjA0YzAtNi4xNjgtNS0xMS4xNjQtMTEuMTY0LTExLjE2NC02Mi4zMjggMC0xMTMuMDMtNjAuMzk4LTExMy4wMy0xMzQuNjMgMC02LjE2OC01LTExLjE2NC0xMS4xNjQtMTEuMTY0LTYuMTY0MSAwLTExLjE2NCA0Ljk5NjEtMTEuMTY0IDExLjE2NCAwIDc0LjIzOC01MC43MDcgMTM0LjYzLTExMy4wMyAxMzQuNjMtNi4xNjggMC0xMS4xNjQgNC45OTYxLTExLjE2NCAxMS4xNjRzNSAxMS4xNjQgMTEuMTY0IDExLjE2NGM2Mi4zMjQgMCAxMTMuMDMgNjAuMzk4IDExMy4wMyAxMzQuNjMgMCA2LjE2NDEgNSAxMS4xNjQgMTEuMTY0IDExLjE2NCA2LjE2OCAwIDExLjE2NC00Ljk5NjEgMTEuMTY0LTExLjE2NCAwLTc0LjIzOCA1MC43MDctMTM0LjYzIDExMy4wMy0xMzQuNjMgNi4xNjQxIDAgMTEuMTY0LTQuOTk2MSAxMS4xNjQtMTEuMTY0em0tMTM1LjM2IDgzLjM4M2MtMTQuMjAzLTM3Ljg1OS00MC45MTQtNjgtNzQuMDQ3LTgzLjM4MyAzMy4xMzctMTUuMzc5IDU5Ljg0OC00NS41MjMgNzQuMDQ3LTgzLjM4MyAxNC4yMDMgMzcuODU5IDQwLjkxNCA2OCA3NC4wNTEgODMuMzgzLTMzLjEzNyAxNS4zODMtNTkuODQ4IDQ1LjUyMy03NC4wNTEgODMuMzgzeiIvPgogIDxwYXRoIGQ9Im01ODIuOTYgNDg3LjA5Yy0zNi44MzYgMC02Ni44MDUtMzYuMDU1LTY2LjgwNS04MC4zNzEgMC02LjE2NDEtNS0xMS4xNjQtMTEuMTY0LTExLjE2NC02LjE2OCAwLTExLjE2NCA0Ljk5NjEtMTEuMTY0IDExLjE2NCAwIDQ0LjMxNi0yOS45NzMgODAuMzcxLTY2LjgwOSA4MC4zNzEtNi4xNjQxIDAtMTEuMTY0IDQuOTk2MS0xMS4xNjQgMTEuMTY0IDAgNi4xNjQxIDUgMTEuMTY0IDExLjE2NCAxMS4xNjQgMzYuODM2IDAgNjYuODA5IDM2LjA1NSA2Ni44MDkgODAuMzcxIDAgNi4xNjQxIDUgMTEuMTY0IDExLjE2NCAxMS4xNjQgNi4xNjQxIDAgMTEuMTY0LTQuOTk2MSAxMS4xNjQtMTEuMTY0IDAtNDQuMzE2IDI5Ljk2OS04MC4zNzEgNjYuODA1LTgwLjM3MSA2LjE2OCAwIDExLjE2NC00Ljk5NjEgMTEuMTY0LTExLjE2NCAwLjAwMzkwNi02LjE2OC00Ljk5NjEtMTEuMTY0LTExLjE2NC0xMS4xNjR6bS03Ny45NjkgNTIuOTY1Yy04LjYyMTEtMTcuODcxLTIxLjczOC0zMi40ODQtMzcuNTc0LTQxLjgwMSAxNS44NC05LjMxNjQgMjguOTUzLTIzLjkzIDM3LjU3NC00MS44MDEgOC42MjExIDE3Ljg3MSAyMS43MzQgMzIuNDg0IDM3LjU3NCA0MS44MDEtMTUuODQgOS4zMTY0LTI4Ljk1MyAyMy45My0zNy41NzQgNDEuODAxeiIvPgogIDxwYXRoIGQ9Im0zOTguNDYgMjMxLjYyYzIxLjIwMyAwIDM4LjQ1MyAyMS4xMjUgMzguNDUzIDQ3LjA4NiAwIDYuMTY4IDUgMTEuMTY0IDExLjE2NCAxMS4xNjQgNi4xNjggMCAxMS4xNjQtNC45OTYxIDExLjE2NC0xMS4xNjQgMC0yNS45NjEgMTcuMjUtNDcuMDg2IDM4LjQ1My00Ny4wODYgNi4xNjQxIDAgMTEuMTY0LTQuOTk2MSAxMS4xNjQtMTEuMTY0IDAtNi4xNjgtNS0xMS4xNjQtMTEuMTY0LTExLjE2NC0yMS4yMDMgMC0zOC40NTMtMjEuMTI1LTM4LjQ1My00Ny4wODYgMC02LjE2OC01LTExLjE2NC0xMS4xNjQtMTEuMTY0LTYuMTY0MSAwLTExLjE2NCA0Ljk5NjEtMTEuMTY0IDExLjE2NCAwIDI1Ljk2MS0xNy4yNSA0Ny4wODYtMzguNDUzIDQ3LjA4Ni02LjE2NDEgMC0xMS4xNjQgNC45OTYxLTExLjE2NCAxMS4xNjQgMCA2LjE2OCA0Ljk5NjEgMTEuMTY0IDExLjE2NCAxMS4xNjR6bTQ5LjYxNy0yOS4zNTljNC40Njg4IDcuMTk1MyAxMC4xMDIgMTMuMzc5IDE2LjU5IDE4LjE5NS02LjQ4ODMgNC44MTY0LTEyLjEyNSAxMS0xNi41OSAxOC4xOTUtNC40Njg4LTcuMTk1My0xMC4xMDItMTMuMzc5LTE2LjU5LTE4LjE5NSA2LjQ4ODMtNC44MTY0IDEyLjEyNS0xMSAxNi41OS0xOC4xOTV6Ii8+CiA8L2c+Cjwvc3ZnPgo=" alt="Star Icon 5240867" class="styles__Image-sc-2erpfv-1 gbnltd"> 
+
+
+
+
+css
+
+
+*/
+
+
+        /*Header*/
+
+
+
+.shipping-container{
+    background-color: #F4F0FC;
+    color: #8863B2;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 28px 10%;
+    background-image: url("matchahero.png");
+}
+
+.container{
+    display: flex;
+    
+}
+
+
+
+.brand-text{
+    font-size: 40px;
+    font-weight: 700;
+    color: #90BE51;
+    padding-left: 50px;
+}
+
+.container-nav1 {
+    display: flex;
+    justify-content: center;
+}
+
+
+.brand{
+    padding: 0px 15px;
+    color: #4F7C13;
+    font-weight: 600;
+    font-size: 30px;
+    transition: all 0.3 ease 0s;
+}
+
+
+.fa-solid {
+    display: flex;
+    color: #4F7C13;
+    font-size: 35px;
+    margin-left: 40px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+   
+}
+
+.container-nav2{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    
+}
+
+#nav-mobile {
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    list-style-type: none;
+    flex-basis: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+.brand-logo {
+    flex-basis: 25%;
+}
+
+.container-nav2 {
+    flex-basis: 25%;
+    display: flex;
+    padding-top: 15px;
+    
+}
+     
+
+
+        /*Footer*/
+
+
+
+
+
+
+        .footer{
+
+
+            min-height:100vh; display:flex; flex-direction:column; justify-content:space-between;
+         
+        }
+        
+        .footer-container{
+           
+            display: flex;
+            flex-direction: row;
+            background-color: #040208;
+            align-items: center;
+            flex-basis: 50%;
+        }
+        
+        
+        
+        
+        
+        .footer-section1{
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .footer-section2{
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .footer-section3{
+        
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .footer-text{
+        
+            color: #4F7C13;
+            font-weight: 600;
+            font-size: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        
+        
+        .footer-attribute{
+        
+            flex-direction: row;
+            color: #4F7C13;
+            font-weight: 200;
+            font-size: 30px;
+        }
+        
+        
+        .fa-instagram{
+            color: #4F7C13;
+        }
